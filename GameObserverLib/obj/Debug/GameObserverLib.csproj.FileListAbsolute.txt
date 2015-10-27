@@ -1,0 +1,11 @@
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\GameObserverLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\GameObserverLib.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\GameObjectLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\Messaging.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\obj\Debug\GameObserverLib.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\obj\Debug\GameObserverLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\obj\Debug\GameObserverLib.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\ExternalRefs\BinaryImageLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\ExternalRefs\GameObjectLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\ExternalRefs\Messaging.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Debug\BinaryImageLib.dll

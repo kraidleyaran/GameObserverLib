@@ -1,0 +1,15 @@
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\GameObserverTest.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\GameObserverTest.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\GameObjectLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\GameObserverLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\Messaging.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\nunit.framework.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\GameObjectLib.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\GameObserverLib.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\Messaging.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\nunit.framework.xml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\obj\Debug\GameObserverTest.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\obj\Debug\GameObserverTest.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\obj\Debug\GameObserverTest.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\BinaryImageLib.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverTest\bin\Debug\BinaryImageLib.pdb
