@@ -7,13 +7,11 @@ namespace GameObserverLib
     [Serializable]
     public class ObserverData
     {
-        public ObserverData(Dictionary<string, GameObject> activeObjects, Dictionary<string, GameObject> inactiveObjects  )
+        public ObserverData(Dictionary<string, GameObject> objectList )
         {
-            ActiveObjects = activeObjects;
-            InactiveObjects = inactiveObjects;
+            ObjectList = objectList;
         }
 
-        public Dictionary<string, GameObject> ActiveObjects;
-        public Dictionary<string, GameObject> InactiveObjects;
+        public Dictionary<string, GameObject> ObjectList { get; private set; }
     }
 }

@@ -53,7 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameObserver.cs" />
-    <Compile Include="ObjectStatus.cs" />
     <Compile Include="ObserverData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

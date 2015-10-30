@@ -8,3 +8,4 @@ C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserver
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\bin\Release\Messaging.dll
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\obj\Release\GameObserverLib.dll
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\obj\Release\GameObserverLib.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GameObserverLib\GameObserverLib\obj\Release\GameObserverLib.csprojResolveAssemblyReference.cache

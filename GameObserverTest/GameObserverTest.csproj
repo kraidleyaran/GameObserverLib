@@ -40,7 +40,7 @@
     </Reference>
     <Reference Include="GameObserverLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\GameObserverLib\bin\Debug\GameObserverLib.dll</HintPath>
+      <HintPath>..\GameObserverLib\bin\Release\GameObserverLib.dll</HintPath>
     </Reference>
     <Reference Include="Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

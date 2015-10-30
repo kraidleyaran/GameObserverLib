@@ -26,7 +26,7 @@ namespace GameObserverTest
         {
             GameObserver observer = GameObserver.Instance;
             GameObject newGameObject = new GameObject("new game object");
-            Assert.IsTrue(observer.ObserveGameObject(newGameObject, ObjectStatus.Inactive));
+            Assert.IsTrue(observer.ObserveGameObject(newGameObject));
         }
 
         [TestCase(TestName = "UnObserving a GameObject using UnobserveGameObject method works correctly")]
@@ -34,43 +34,17 @@ namespace GameObserverTest
         {
             GameObserver observer = GameObserver.Instance;
             GameObject newGameObject = new GameObject("new game object");
-            observer.ObserveGameObject(newGameObject, ObjectStatus.Inactive);
+            observer.ObserveGameObject(newGameObject);
             Assert.IsTrue(observer.UnobserveGameObject(newGameObject.Name));
         }
 
-        [TestCase(TestName = "Setting a GameObject to Active using SetGameObjectActive method works correctly")]
-        public void SetGameObjectActive()
-        {
-            GameObserver observer = GameObserver.Instance;
-            GameObject newGameObject = new GameObject("new game object");
-            observer.ObserveGameObject(newGameObject, ObjectStatus.Inactive);
-            Assert.IsTrue(observer.SetGameObjectActive(newGameObject.Name));
-        }
 
-        [TestCase(TestName = "Setting a GameObject to Inactive using SetGameObjectInActive() method works correctly")]
-        public void SetGameObjectInActive()
-        {
-            GameObserver observer = GameObserver.Instance;
-            GameObject newGameObject = new GameObject("new game object");
-            observer.ObserveGameObject(newGameObject, ObjectStatus.Active);
-            Assert.IsTrue(observer.SetGameObject_InActive(newGameObject.Name));
-        }
-
-        [TestCase(TestName = "Retreiving a GameObject's status using GetGameObjectStatus works correctly")]
-        public void GetGameObjectStatus()
-        {
-            GameObserver observer = GameObserver.Instance;
-            GameObject newGameObject = new GameObject("new game object");
-            observer.ObserveGameObject(newGameObject, ObjectStatus.Active);
-            Assert.IsTrue(ObjectStatus.Active == observer.GetGameObjectStatus(newGameObject.Name));
-        }
-
-        [TestCase(TestName = "Sending a message to an Active object works correctly")]
+        [TestCase(TestName = "Sending a message to an object works correctly")]
         public void SendMessageToActiveObject()
         {
             GameObserver observer = GameObserver.Instance;
             GameObject newGameObject = new GameObject("new game object");
-            observer.ObserveGameObject(newGameObject, ObjectStatus.Active);
+            observer.ObserveGameObject(newGameObject);
             Message message = new Message(newGameObject.Name, MessageAction.Add, "new property", "a value", PropType.String);
             Response response = observer.SendMessage(message);
             Assert.IsTrue(response.Status);
@@ -79,26 +53,12 @@ namespace GameObserverTest
             Assert.IsTrue(response.PropType == PropType.String);
         }
 
-        [TestCase(TestName = "Sending a message to an Inactive object works correctly")]
-        public void SendMessageToInactiveObject()
-        {
-            GameObserver observer = GameObserver.Instance;
-            GameObject newGameObject = new GameObject("new game object");
-            observer.ObserveGameObject(newGameObject, ObjectStatus.Inactive);
-            Message message = new Message(newGameObject.Name, MessageAction.Add, "new property", "a value", PropType.String);
-            Response response = observer.SendMessage(message);
-            Assert.IsFalse(response.Status);
-            Assert.IsTrue(response.Value == "GameObject is inactive");
-            Assert.IsTrue(response.PropType == PropType.Error);
-
-        }
-
         [TestCase(TestName = "Sending a message to an object that is not being observed works correctly")]
         public void SendMessageToMissingObject()
         {
             GameObserver observer = GameObserver.Instance;
             GameObject newGameObject = new GameObject("new game object");
-            
+
             Message message = new Message(newGameObject.Name, MessageAction.Add, "new property", "a value", PropType.String);
             Response response = observer.SendMessage(message);
             Assert.IsFalse(response.Status);
