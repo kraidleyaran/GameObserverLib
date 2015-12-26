@@ -16,15 +16,11 @@ namespace GameObserverTest
     public class GameObserver_Test
     {
         [TearDown]
-        public void ClearObserverGameObjects()
-        {
-            GameObserver observer = GameObserver.Instance;
-            observer.ClearObserverGameObjects();
-        }
+
         [TestCase(TestName = "Observing a GameObject using ObserveGameObject() method works correctly")]
         public void ObserveGameObject()
         {
-            GameObserver observer = GameObserver.Instance;
+            GameObserver observer = new GameObserver();
             GameObject newGameObject = new GameObject("new game object");
             Assert.IsTrue(observer.ObserveGameObject(newGameObject));
         }
@@ -32,7 +28,7 @@ namespace GameObserverTest
         [TestCase(TestName = "UnObserving a GameObject using UnobserveGameObject method works correctly")]
         public void UnObserverGameObject()
         {
-            GameObserver observer = GameObserver.Instance;
+            GameObserver observer = new GameObserver();
             GameObject newGameObject = new GameObject("new game object");
             observer.ObserveGameObject(newGameObject);
             Assert.IsTrue(observer.UnobserveGameObject(newGameObject.Name));
@@ -42,7 +38,7 @@ namespace GameObserverTest
         [TestCase(TestName = "Sending a message to an object works correctly")]
         public void SendMessageToActiveObject()
         {
-            GameObserver observer = GameObserver.Instance;
+            GameObserver observer = new GameObserver();
             GameObject newGameObject = new GameObject("new game object");
             observer.ObserveGameObject(newGameObject);
             Message message = new Message(newGameObject.Name, MessageAction.Add, "new property", "a value", PropType.String);
@@ -56,7 +52,7 @@ namespace GameObserverTest
         [TestCase(TestName = "Sending a message to an object that is not being observed works correctly")]
         public void SendMessageToMissingObject()
         {
-            GameObserver observer = GameObserver.Instance;
+            GameObserver observer = new GameObserver();
             GameObject newGameObject = new GameObject("new game object");
 
             Message message = new Message(newGameObject.Name, MessageAction.Add, "new property", "a value", PropType.String);

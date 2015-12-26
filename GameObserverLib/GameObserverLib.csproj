@@ -63,6 +63,7 @@
     <Content Include="ExternalRefs\GameObjectLib.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ExternalRefs\GameObjectLib.pdb" />
     <Content Include="ExternalRefs\Messaging.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
